@@ -95,4 +95,19 @@ Tarayıcıdan HTML dosyalarını doğrudan açabilirsiniz:
 - `products.html` – Ürün işlemleri
 - `cart.html` – Sepet yönetimi
 - `reset-password.html` – Şifre sıfırlama
+  
+## Projenin Sağladığı Avantajlar
+- Çoklu Veritabanı Kullanımı: MySQL ve MongoDB birlikte kullanılarak veritabanı yönetim sistemlerinin entegrasyonu gösterilmiş ve her veritabanı türünün güçlü yanlarından faydalanılmıştır.
 
+- Esneklik: Kullanıcı, müşteri veya tedarikçi olarak farklı rollerle sisteme erişim sağlayabilir. Bu, sistemin esnekliğini artırır ve kullanıcı deneyimini geliştirir.
+
+- Gelişmiş Güvenlik: JWT tabanlı kimlik doğrulama ve bcrypt şifreleme kullanılarak uygulama güvenliği üst seviyeye çıkarılmıştır.
+
+- E-posta Sistemi: Nodemailer ve Gmail SMTP kullanılarak sistemden şifre sıfırlama gibi bildirimler, güvenli ve pratik bir şekilde kullanıcıya iletilir.
+
+- Soft Delete Özelliği: Verilerin yanlışlıkla silinmesini engelleyen ve geri dönüşüm imkanı tanıyan bir soft delete özelliği projeye entegre edilmiştir.
+
+- Kolay Kullanıcı Arayüzü: Basit ve kullanıcı dostu frontend arayüzleri ile kullanıcı deneyimi iyileştirilmiştir.
+
+## Sonuç
+HibritVT-Eticaret projesi, çoklu veritabanı kullanımını ve modern web uygulamaları için gerekli olan güvenlik, esneklik ve kullanıcı deneyimi özelliklerini birleştirerek, profesyonel düzeyde bir e-ticaret sistemi geliştirme imkanı sunmaktadır. Bu proje, hem teori hem de pratik açısından öğrencilere önemli deneyimler kazandırır.
