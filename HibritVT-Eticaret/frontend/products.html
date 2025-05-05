@@ -1,0 +1,26 @@
+<!-- frontend/products.html -->
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ürünler</title>
+  </head>
+  <body>
+    <h1>Ürün Listesi</h1>
+    <ul id="productList"></ul>
+
+    <script>
+      async function fetchProducts() {
+        const res = await fetch("http://localhost:5000/api/products");
+        const data = await res.json();
+        const list = document.getElementById("productList");
+        data.data.products.forEach((product) => {
+          const li = document.createElement("li");
+          li.textContent = `${product.name} - ${product.price} TL`;
+          list.appendChild(li);
+        });
+      }
+      fetchProducts();
+    </script>
+  </body>
+</html>

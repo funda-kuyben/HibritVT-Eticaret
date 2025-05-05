@@ -1,0 +1,43 @@
+<!-- frontend/login.html -->
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Giriş Yap</title>
+  </head>
+  <body>
+    <h1>Giriş Yap</h1>
+    <form id="loginForm">
+      <input type="email" name="email" placeholder="Email" required /><br />
+      <input
+        type="password"
+        name="password"
+        placeholder="Şifre"
+        required
+      /><br />
+      <button type="submit">Giriş Yap</button>
+    </form>
+
+    <script>
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const data = Object.fromEntries(new FormData(this).entries());
+          const res = await fetch("http://localhost:5000/api/auth/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          });
+          const result = await res.json();
+          if (result.token) {
+            localStorage.setItem("token", result.token);
+            alert("Giriş başarılı!");
+            window.location.href = "products.html";
+          } else {
+            alert(result.msg);
+          }
+        });
+    </script>
+  </body>
+</html>
