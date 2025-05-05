@@ -110,4 +110,6 @@ Tarayıcıdan HTML dosyalarını doğrudan açabilirsiniz:
 - Kolay Kullanıcı Arayüzü: Basit ve kullanıcı dostu frontend arayüzleri ile kullanıcı deneyimi iyileştirilmiştir.
 
 ## Sonuç
-HibritVT-Eticaret projesi, çoklu veritabanı kullanımını ve modern web uygulamaları için gerekli olan güvenlik, esneklik ve kullanıcı deneyimi özelliklerini birleştirerek, profesyonel düzeyde bir e-ticaret sistemi geliştirme imkanı sunmaktadır. Bu proje, hem teori hem de pratik açısından öğrencilere önemli deneyimler kazandırır.
+Bu projede hem ilişkisel (MySQL) hem de NoSQL (MongoDB) veritabanlarının birlikte kullanıldığı hibrit bir e-ticaret sistemi geliştirilmiştir. Kullanıcı kimlik doğrulama süreçleri, ürün ve sepet yönetimi gibi temel e-ticaret işlevleri JWT tabanlı güvenli bir altyapı ile gerçekleştirilmiştir. Proje sürecinde kullanıcı arayüzü, backend API'ler ve veritabanı işlemleri uçtan uca test edilmiştir. Şifre sıfırlama gibi ileri düzey özellikler de dahil edilerek tam işlevsel ve güvenli bir sistem ortaya konmuştur.
+
+Bu sistem, gerçek dünya senaryoları için temel bir örnek teşkil etmekte ve farklı veritabanı türlerinin avantajlarını bir arada kullanmayı göstermektedir.
